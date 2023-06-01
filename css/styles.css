@@ -1,16 +1,6 @@
 body {
-  background: #efefef;
   margin: 0;
-}
-
-.header_text {
-  width: 1000px;
-  height: 60px;
-  text-align: center;
-  line-height: 60px;
-  font-size: 60px;
-  color: white;
-  font-weight: bold;
+  color: #333333;
 }
 
 .header_bg {
@@ -22,45 +12,56 @@ body {
   background-size: cover;
 }
 
+.header_text {
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  font-weight: bold;
+}
+
 main {
-  width: 900px;
-  margin: 0 auto;
+  width: 80%;
+  background: skyblue;
+  margin: 50px auto;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .profile {
-  margin: 80px 0 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 30px 0;
+  padding: 20px 0;
+  background:rgb(200, 200, 200)
 }
 
-.profile > img {
-  background: white;
-  border: 1px solid rgb(200, 200, 200);
-  border-radius: 50%;
+.profile > h1 {
+  text-align: center;
 }
 
 .pf_contents {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 100px;
+  background: blue;
 }
 
-.pf_contents > h1 {
-  margin: 5px;
-  margin-bottom: 20px;;
+.pf_contents > img {
+  background: white;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 50%;
+  background: pink;
 }
 
 .pf_contents > p {
-  margin: 5px;
+  background: lightpink;
 }
 
 .contains {
-  margin-bottom: 40px;
+  margin: 30px 0;
+  padding: 20px 0;
+  background: green;
 }
 
 .contains > h1 {
@@ -68,23 +69,33 @@ main {
 }
 
 .works {
-  margin: 50px auto;
+  margin: ;
   display: flex;
   justify-content: space-between;
+  gap: 16px;
+  background: lightgreen;
 }
 
 .works > section {
-  width: 280px;
+  flex: 1;
+  padding: 18px;
+  background: tomato;
 }
 
-.works > section > img {
+.works > section  > img {
   display: block;
   margin: 0 auto;
+  background: lemonchiffon;
+}
+
+.works > section > a > img {
+  display: block;
+  margin: 0 auto;
+  background: yellow;
 }
 
 .works > section > p {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  background: yellowgreen;
 }
 
 .works_a {
@@ -96,26 +107,27 @@ main {
 }
 
 .form {
-  margin: 30px auto 10px;
-}
-
-.form_container {
-  width: 500px;
-  margin: 40px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 30px auto;
+  padding: 20px 0;
+  background: purple;
 }
 
 .form > h1 {
   text-align: center;
 }
 
+.form_container {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
 .form_container > img {
   background: white;
   border: 1px solid rgb(200, 200, 200);
   border-radius: 50%;
-  margin-right: 20px;
 }
 
 .form_link {
