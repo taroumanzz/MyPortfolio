@@ -78,8 +78,6 @@ main {
 .works > section > a > img {
   display: block;
   margin: 0 auto;
-  border: 1px solid rgb(200, 200, 200);
-  box-sizing: border-box;
 }
 
 .works_a {
