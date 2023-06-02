@@ -60,7 +60,6 @@ main {
 }
 
 .works {
-  margin: ;
   display: flex;
   justify-content: space-between;
   gap: 16px;
