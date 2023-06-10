@@ -38,10 +38,12 @@ h1 {
 }
 
 .pf_contents {
+  max-width: 890px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 16px;
+  margin: 0 auto;
   padding: 10px 100px;
 }
 
