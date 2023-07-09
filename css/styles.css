@@ -40,7 +40,7 @@ h1 {
 }
 
 .pf_contents {
-  max-width: 890px;
+  max-width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,6 +72,10 @@ h1 {
   flex-direction: column;
   gap: 20px;
   padding: 18px;
+}
+
+#subWork {
+  order: 1;
 }
 
 .work > img {
@@ -164,6 +168,10 @@ small {
     flex-direction: row;
     align-items: center;
     gap: 30px;
+  }
+
+  #subWork {
+    order: 0;
   }
 
   .work:nth-child(even) {
