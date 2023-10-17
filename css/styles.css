@@ -44,7 +44,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 40px;
   margin: 0 auto;
   padding: 10px 100px;
 }
@@ -107,6 +107,8 @@ h2 {
 }
 
 .works_a > a {
+  display: inline-block;
+  margin: 0 15px;
   text-decoration: none;
   color: #1558d6;
 }
@@ -185,6 +187,7 @@ small {
 @media (max-width: 1000px) {
   .pf_contents {
     flex-direction: column;
+    gap: 20px;
   }   
 
   .works {
