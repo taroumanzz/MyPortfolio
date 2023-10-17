@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../pictures/background.jpg);
+  background-image: url(../pictures/background.webp);
   background-size: cover;
   background-position: center 0;
 }
@@ -55,15 +55,19 @@ h1 {
   border-radius: 50%;
 }
 
-.contains {
-  margin: 30px 0;
-  padding: 20px 0;
+.works_container {
+  width: 100%;
 }
 
 .works {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 16px;
+}
+
+#sub_work {
+  order: -1;
 }
 
 .work {
@@ -74,8 +78,9 @@ h1 {
   padding: 18px;
 }
 
-#subWork {
-  order: 1;
+.work > a {
+  display: block;
+  margin: 0 auto;
 }
 
 .work > img {
@@ -83,9 +88,8 @@ h1 {
   margin: 0 auto;
 }
 
-.work > a > img {
-  display: block;
-  margin: 0 auto;
+#my_training_report_pic {
+  border: 1px solid rgb(200, 200, 200);
 }
 
 h2 {
@@ -93,7 +97,7 @@ h2 {
   font-weight: normal;
 }
 
-.description > ul {
+.work_description > ul {
   margin: 30px 0;
   list-style-type: square;
 }
@@ -105,6 +109,10 @@ h2 {
 .works_a > a {
   text-decoration: none;
   color: #1558d6;
+}
+
+ul {
+  padding-left: 20px;
 }
 
 .form {
@@ -156,7 +164,71 @@ small {
   color: #aaa;
 }
 
+@media (max-width: 1400px) {
+  .works {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+
+  #sub_work {
+    order: 0;
+  }
+
+  .work {
+    flex: auto;
+    width: 40%;
+    padding: 18px 0;
+  }
+}
+
 @media (max-width: 1000px) {
+  .pf_contents {
+    flex-direction: column;
+  }   
+
+  .works {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .work {
+    width: calc(100% - 16px);
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .work:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 700px) {
+  .pf_contents {
+    padding: 20px;
+  }
+
+  .work {
+    flex-direction: column;
+  }
+
+  .work:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  .form_container {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+}
+
+
+
+
+
+
+
+/* @media (max-width: 1000px) {
   .pf_contents {
     flex-direction: column;
   }   
@@ -171,16 +243,12 @@ small {
     gap: 30px;
   }
 
-  #subWork {
-    order: 0;
-  }
-
   .work:nth-child(even) {
     flex-direction: row-reverse;
   }
-}
+} */
 
-@media (max-width: 700px) {
+/* @media (max-width: 750px) {
   .pf_contents {
     padding: 20px;
   }
@@ -197,5 +265,5 @@ small {
   .form_container {
     flex-direction: column;
     padding: 20px 0;
-  }
+  } */
 }

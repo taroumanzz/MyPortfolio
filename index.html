@@ -17,57 +17,29 @@
   </header>
 
   <main>
+    <!-- プロフィール -->
     <section class="profile">
       <h1>PROFILE</h1>
       <div class="pf_contents">
-        <img src="pictures/hito.png" width="180px" height="180px" alt="制作者の画像">
+        <img src="pictures/hito.webp" width="180px" height="180px" alt="制作者の画像">
         <p>
           はじめまして。医療業界からIT業界へ転職を目指して活動中の寺園（てらぞの）と申します。<br>
           大学で医学を学び臨床検査技師国家試験に合格、卒業後は総合病院に就職し、現在まで13年間主に病理検査や生理検査といった検査業務に従事してきました。<br>
-          小さい頃から機械をさわったりその仕組みを知ることが好きで、パソコンを扱うことも好きでした。就職後も日々検査システムや医療機器を扱う中でプログラミングへの興味が強くなり、自分も作る側になりたいと思い学習を開始しました。これまでHTML・CSS・JavaScriptと学んで、アプリ・Web制作を通して少しずつ自身の成長を感じ、楽しみながら学習を進めています。<br>
+          小さい頃から機械をさわったりその仕組みを知ることが好きで、パソコンを扱うことも好きでした。就職後も、日々検査システムや医療機器を扱う中でプログラミングへの興味が強くなり、自分も作る側になりたいと思い学習を開始しました。これまでHTML・CSS・JavaScriptと学んで、アプリ・Web制作を通して少しずつ自身の成長を感じ、楽しみながら学習を進めています。<br>
           また最近ではブロックチェーンにも興味があり、ゆくゆくは自身もエンジニアとして関われたらいいなと考えています。
         </p>
       </div>
     </section>
-    <section class="contains">
+
+    <!-- WORKS一覧 -->
+    <section class="works_container">
       <h1>WORKS</h1>
       <div class="works">
         <section class="work">
-          <img src="pictures/MyPortfolio.jpg" width="200px" height="120px" alt="ポートフォリオの画像">
-          <div class="description">
-            <h2>ポートフォリオサイト</h2>
-            <ul>
-              <li>自身のポートフォリオサイトです。</li>
-              <li>フレックスボックス・メディアクエリーを使用し、異なるデバイスでもきれいに表示されるようレスポンシブデザインに対応させています。</li>
-              <li>またお問い合わせ機能（Googleフォーム）も実装し、閲覧者とコミニュケーションをとれるようにしてあります。</li>
-            </ul>
-          </div>
-        </section>
-        <section class="work" id="subWork">
-          <a href="https://taroumanzz.github.io/quizgame/" target="_blank">
-            <img src="pictures/QuizGame.jpg" width="200px" height="120px" alt="クイズゲームアプリの画像">
-          </a>
-          <div class="description">
-            <h2>クイズアプリ</h2>
-            <ul>
-              <li>4択問題のクイズアプリです。</li>
-              <li>使用言語：HTML・CSS（Bootstrap）・JavaScript</li>
-              <li>ポケモンが好きな息子に遊んでもらうために、JavaScriptを使って制作しました。</li>
-              <li>全問解答後にモーダルウィンドウを使った結果発表があり、正解数を自動でカウントしてくれます。</li>
-              <li>配列に問題・選択肢・解答を追加するだけで全体に反映されるよう工夫し、拡張性を持たせました。</li>
-            </ul>
-            <div class="works_a">
-              <a href="https://taroumanzz.github.io/quizgame/" target="_blank">
-                GitHub
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="work">
           <a href="https://taroumanzz.github.io/trainingtimer/" target="_blank">
-            <img src="pictures/MyTrainingTimer.jpg" width="200px" height="120px" alt="トレーニング用タイマーアプリの画像">
+            <img src="pictures/MyTrainingTimer.webp" width="200px" height="120px" alt="トレーニング用タイマーアプリの画像">
           </a>
-          <div class="description">
+          <div class="work_description">
             <h2>トレーニング用タイマーアプリ</h2>
             <ul>
               <li>トレーニング中に使用するタイマーアプリです。</li>
@@ -78,17 +50,70 @@
             </ul>
             <div class="works_a">
               <a href="https://taroumanzz.github.io/trainingtimer/" target="_blank">
-                GitHub
+                App
               </a>
             </div>
           </div>
         </section>
+        <section class="work">
+          <a href="https://my-training-report-47e07211e402.herokuapp.com/" target="_blank">
+            <img src="pictures/mytrainingreporthome.webp" width="200px" height="120px" alt="トレーニング内容を記録するアプリの画像" id="my_training_report_pic">
+          </a>
+          <div class="work_description">
+            <h2>トレーニングメニュー記録アプリ</h2>
+            <ul>
+              <li>トレーニング内容を記録するブログ風アプリです。</li>
+              <li>使用言語：PHP（Laravel）</li>
+              <li>自身のトレーニング内容をWeb上に記録するために、ブログアプリを参考に作成しました。</li>
+              <li>基本的なCRUD機能を実装しつつ、各種目ごとにセット数・回数を記録します。</li>
+              <li>現在は基本的な記録機能の実装のみですが、今後はタイマーアプリと組み合わせて、一つの筋トレ用アプリとして機能を充実させていく予定です。</li>
+            </ul>
+            <div class="works_a">
+              <a href="https://my-training-report-47e07211e402.herokuapp.com/" target="_blank">
+                App
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="work" id="sub_work">
+          <a href="https://taroumanzz.github.io/quizgame/" target="_blank">
+            <img src="pictures/QuizGame.webp" width="200px" height="120px" alt="クイズゲームアプリの画像">
+          </a>
+          <div class="work_description">
+            <h2>クイズアプリ</h2>
+            <ul>
+              <li>4択問題のクイズアプリです。</li>
+              <li>使用言語：HTML・CSS（Bootstrap）・JavaScript</li>
+              <li>ポケモンが好きな息子に遊んでもらうために、JavaScriptを使って制作しました。</li>
+              <li>全問解答後にモーダルウィンドウを使った結果発表があり、正解数を自動でカウントしてくれます。</li>
+              <li>配列に問題・選択肢・解答を追加するだけで全体に反映されるよう工夫し、拡張性を持たせました。</li>
+            </ul>
+            <div class="works_a">
+              <a href="https://taroumanzz.github.io/quizgame/" target="_blank">
+                App
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="work">
+          <img src="pictures/MyPortfolio.webp" width="200px" height="120px" alt="ポートフォリオの画像">
+          <div class="work_description">
+            <h2>ポートフォリオサイト</h2>
+            <ul>
+              <li>自身のポートフォリオサイトです。</li>
+              <li>フレックスボックス・メディアクエリーを使用し、異なるデバイスでもきれいに表示されるようレスポンシブデザインに対応させています。</li>
+              <li>またお問い合わせ機能（Googleフォーム）も実装し、閲覧者とコミニュケーションをとれるようにしてあります。</li>
+            </ul>
+          </div>
+        </section>
       </div>
     </section>
+
+    <!-- お問い合わせフォーム -->
     <section class="form">
       <h1>お問い合わせフォーム</h1>
       <div class="form_container">
-        <img src="pictures/hito.png" width="80px" height="80px" alt="制作者の画像">
+        <img src="pictures/hito.webp" width="80px" height="80px" alt="制作者の画像">
         <div class="form_link">
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQr3PUanRfrtiKbnb3c9QaaRICvopPLR_xoLreBsr5GAwyNA/viewform?usp=sf_link" target="_blank">
             お問い合わせはコチラへ
@@ -103,7 +128,5 @@
       Copyright © 2023 Terazono All Rights Reserved.
     </small>
   </footer>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
