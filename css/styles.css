@@ -215,7 +215,7 @@ small {
     flex-direction: column;
   }
 
-  .work:nth-child(odd) {
+  .work:nth-child(even) {
     flex-direction: column;
   }
 
